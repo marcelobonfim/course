@@ -21,6 +21,7 @@ public class UserModel implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
+//    @Column(name = "user_id")
     private UUID userId;
     @Column(nullable = false, unique = true, length = 50)
     private String email;
